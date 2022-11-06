@@ -15,11 +15,11 @@ public class Main {
         Numb x = getNumber(arrNum[0]);
         String operation = arrNum[1];
         Numb y = getNumber(arrNum[2]);
-        if (x.type != y.type) {
-            throw new RuntimeException("a");
+        if (!x.type.equals(y.type)) {
+            throw new RuntimeException("Типы чисел разные");
         }
         if (x.number < 1 || x.number > 10 || y.number < 1 || y.number > 10) {
-            throw new RuntimeException("v");
+            throw new RuntimeException("Число меньше 1 или больше 10");
         }
         result = switch (operation) {
             case "+" -> x.add(y);

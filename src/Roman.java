@@ -1,19 +1,18 @@
 enum Roman {
 
-    I(1),
-    IV(4),
-    V(5),
-    IX(9),
-    X(10),
-    XL(40),
-    L(50),
+    C(100),
     XC(90),
-    C(100);
+    L(50),
+    XL(40),
+    X(10),
+    IX(9),
+    V(5),
+    IV(4),
+    I(1);
 
     int value;
 
     Roman(int value) {
         this.value = value;
     }
-
 }
